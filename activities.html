@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upcoming activities of the Code Crafters Coding Club and the membership registration form.">
+    <title>Activities &amp; Registration | Code Crafters Coding Club</title>
+</head>
+<body>
+    <header>
+        <h1>Code Crafters Coding Club</h1>
+        <p>Learn. Build. Share.</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html" aria-current="page">Activities &amp; Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="activities">
+            <h2>Our Activities</h2>
+            <figure>
+                <img src="images/team-laptops.jpg" alt="Students working on laptops at long tables while a presenter speaks next to a screen" width="600" height="450">
+                <figcaption>Members learning together at a club workshop. (Photo: Unsplash)</figcaption>
+            </figure>
+
+            <article>
+                <h3>Beginner Coding Workshops</h3>
+                <p>
+                    Hands-on sessions where we write real code from the first minute. Each workshop covers
+                    one topic, such as variables and loops in Python or building a web page with HTML and CSS.
+                    Bring a laptop; no experience needed.
+                </p>
+            </article>
+
+            <article>
+                <h3>Weekend Hackathon</h3>
+                <p>
+                    A 24-hour event where teams of three to four build a project from scratch around a
+                    surprise theme. Mentors are on hand to help, and the best projects win prizes.
+                </p>
+            </article>
+
+            <article>
+                <h3>Competitive Programming Night</h3>
+                <p>
+                    We solve timed algorithm problems together, then walk through the solutions. It is
+                    great practice for coding interviews and programming contests.
+                </p>
+            </article>
+
+            <article>
+                <h3>Open-Source Contribution Day</h3>
+                <p>
+                    Learn how to use Git and GitHub, find a beginner-friendly issue, and make your first
+                    contribution to a real open-source project. See example projects on
+                    <a href="https://github.com/BekirBM" target="_blank" rel="noopener noreferrer">my GitHub profile</a>.
+                </p>
+            </article>
+        </section>
+
+        <section id="schedule">
+            <h2>Upcoming Schedule</h2>
+            <table>
+                <caption>Activities for the Spring 2027 semester</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner Coding Workshop: Python Basics</td>
+                        <td>February 4, 2027</td>
+                        <td>5:00 PM &ndash; 7:00 PM</td>
+                        <td>Computer Lab B</td>
+                    </tr>
+                    <tr>
+                        <td>Competitive Programming Night</td>
+                        <td>February 18, 2027</td>
+                        <td>6:00 PM &ndash; 8:30 PM</td>
+                        <td>Engineering Building, Room 204</td>
+                    </tr>
+                    <tr>
+                        <td>Open-Source Contribution Day</td>
+                        <td>March 7, 2027</td>
+                        <td>10:00 AM &ndash; 3:00 PM</td>
+                        <td>Library Innovation Hub</td>
+                    </tr>
+                    <tr>
+                        <td>Weekend Hackathon</td>
+                        <td>April 11&ndash;12, 2027</td>
+                        <td>9:00 AM (24 hours)</td>
+                        <td>Student Center Main Hall</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Register as a Member</h2>
+            <p>Fill in the form below to join the club. Fields marked with * are required.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="fullname">Full name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Alex Morgan" required>
+                </p>
+
+                <p>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </p>
+
+                <p>
+                    <label for="activity">Preferred activity *</label>
+                    <select id="activity" name="activity" required>
+                        <option value="">-- Choose an activity --</option>
+                        <option value="workshops">Beginner Coding Workshops</option>
+                        <option value="hackathon">Weekend Hackathon</option>
+                        <option value="competitive">Competitive Programming Night</option>
+                        <option value="opensource">Open-Source Contribution Day</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Membership type *</legend>
+                    <label><input type="radio" name="membership" value="regular" checked> Regular member</label>
+                    <label><input type="radio" name="membership" value="active"> Active member (helps organize events)</label>
+                    <label><input type="radio" name="membership" value="mentor"> Mentor</label>
+                </fieldset>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="agree" value="yes" required>
+                        I agree to follow the club rules and code of conduct. *
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Register</button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
